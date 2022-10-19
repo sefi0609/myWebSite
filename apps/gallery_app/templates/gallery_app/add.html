@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>Add Photo</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'Stylesheet3.css' %}">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" style="margin-left: 16px;" href="">myGallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'login_app:index' %}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hi, {{user.first_name}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 style="text-align:center;" onclick="location.href='{% url 'gallery' %}'">
+        myGallery
+    </h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                    <a href="{% url 'gallery' %}" class="btn btn-dark my-3">Go Back</a>
+                <div class="card">
+
+                    <form method="POST" action="" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group m-3">
+                            <label>Discription</label>
+                            <input required name="discription" type="text" placeholder="Enter a discription" class="form-control">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Select a category</label>
+                            <select name="category" class="form-control">
+                                <option value="none">Select a category...</option>
+
+                                {% for category in categories %}
+                                <option value="{{ category.id }}">{{ category.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Create a new category</label>
+                            <input name="category_new" type="text" placeholder="Create a new category" class="form-control">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Upload images</label>
+                            <input required name="images" type="file" multiple class="form-control-file">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary m-3">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        {% for message in messages %}
+        <div class="alert alert-danger" role="alert">
+            {{message}}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="footer3">
+        @Copyright myHub 2022- All Right Reserved.
+    </div>
+
+</body>
+</html>
