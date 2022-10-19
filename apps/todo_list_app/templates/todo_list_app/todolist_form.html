@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>{{ title }}</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="button"
+           value="Save"
+           type="submit">
+    <input class="button"
+           value="Cancel"
+           type="button"
+           onclick="location.href='{% url 'all_lists' %}'">
+</form>
+
+{% endblock %}

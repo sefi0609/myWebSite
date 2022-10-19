@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>All my lists</h3>
+
+<form method="GET">
+    <input type="text" name="search-area" value="{{search_input}}">
+    <input class="button" type="submit" value="Search" />
+</form>
+
+<br>
+
+<ul style="position: relative; left: -20px;">
+    {% for todolist in object_list %}
+    <p>
+        <div class="button2"
+             role="button"
+             onclick="location.href='{% url 'list' todolist.id %}'">
+            {{ todolist.title }}
+        </div>
+        <hr>
+    </p>
+
+    {% empty %}
+    <h4 style="text-align:center;">You have no lists!</h4>
+    {% endfor %}
+</ul>
+
+<p style="text-align:center;">
+    <input class="button"
+           value="Add a new list"
+           type="button"
+           onclick="location.href= '{% url 'list-add' %}'" />
+</p>
+
+{% endblock %}

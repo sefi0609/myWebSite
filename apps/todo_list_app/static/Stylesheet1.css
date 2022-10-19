@@ -1,0 +1,55 @@
+
+.button {
+    background-color: #4A88A1;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid #4A88A1;
+    transition-duration: 0.4s;
+    font-size: 18px;
+}
+
+.button2 {
+    background-color: #4A88A1;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid #4A88A1;
+    transition-duration: 0.4s;
+    font-size: 18px;
+    width: 20%;
+    margin: auto
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid;
+    margin-left: -80px;
+}
+
+.footer {
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    right: 10px;
+    background-color: #424949;
+    color: white;
+    text-align: center;
+}
+
+.footer2 {
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    right: 10px;
+    background-color: #4A88A1;
+    color: white;
+    text-align: center;
+}
