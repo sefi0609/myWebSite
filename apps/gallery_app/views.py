@@ -6,26 +6,29 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import *
 
+# View for gallery 
 def gallery(request):
+    # Display category, none in the html file means all photos
     category = request.GET.get('category')
-
+    # Filter the photos from the database for each user
     if category is None:
         photos = Photo.objects.filter(category__user=request.user)
     else:
         photos = Photo.objects.filter(category__name=category,category__user=request.user)
-
+        
     categories = Category.objects.filter(user=request.user)
     context = {'categories':categories, 'photos':photos}
     return render(request, 'gallery_app/gallery.html', context)
-
+# View for a single photo, filter photos for eatch user is done in the gallery view
 def viewPhoto(request, pk):
     photo = Photo.objects.get(id=pk)
     context = {'photo':photo}
     return render(request, 'gallery_app/photo.html', context)
-
+# View for adding a new photo
 def addPhoto(request):
+    # Get all the user categories, each user have is own categories
     categories = Category.objects.filter(user=request.user)
-
+    # Handle the POST request
     if request.method == 'POST':
         data = request.POST
         images = request.FILES.getlist('images')
@@ -37,7 +40,7 @@ def addPhoto(request):
         else:
             messages.info(request, "Please select a category from the list, or create a new one")
             return redirect('add')
-
+        # Create objects for each uploaded photo (can upload multiple photos)
         for image in images:
             photo = Photo.objects.create(
                 category = category,
@@ -50,7 +53,7 @@ def addPhoto(request):
     context = {'categories':categories}
     return render(request, 'gallery_app/add.html', context)
 
-# A class view to delete an event
+# A class view to delete a photo
 class PhotoDelete(LoginRequiredMixin, DeleteView):
     model = Photo
     # You have to use reverse_lazy() instead of reverse(),
