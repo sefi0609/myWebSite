@@ -46,7 +46,7 @@ def register(request):
         if password==confirm_password:
             if User.objects.filter(username=username).exists():
                 messages.info(request, 'Username is already taken')
-                return redirect(register)
+                return redirect('login_app:register')
             elif User.objects.filter(email=email).exists():
                 messages.info(request, 'Email is already taken')
                 return redirect('login_app:register')
@@ -58,7 +58,7 @@ def register(request):
                 return redirect('login_app:login_user')
         else:
             messages.info(request, 'Both passwords are not matching')
-            return redirect(register)
+            return redirect('login_app:register')
     else:
         return render(request, 'login_app/registeration.html')
 
