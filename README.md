@@ -26,7 +26,7 @@ Please see the video and photos below.
 ![atodolist](https://user-images.githubusercontent.com/81361291/198885098-f4ce7cf3-6504-4998-853b-7c2006044e39.PNG)
 
 ### Calendar
-![calendar](https://user-images.githubusercontent.com/81361291/198885059-1fdd620c-c08b-44a1-accd-02548b71411e.PNG)
+![calendar](https://user-images.githubusercontent.com/81361291/198885618-985c118f-8844-4ae2-b7be-e9e669419ffb.PNG)
 
 ### Gallery
 ![gallery](https://user-images.githubusercontent.com/81361291/198885065-a195d90f-c74e-43bf-8b68-17021333f82d.PNG)
