@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.views.generic import ListView, DeleteView, UpdateView
 from django.utils.safestring import mark_safe
+# Block unwanted access to views 
 from django.contrib.auth.mixins import LoginRequiredMixin
 import calendar
 from django.contrib import messages
