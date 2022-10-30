@@ -2,6 +2,7 @@ from email.mime import image
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.views.generic import DeleteView
+# Block unwanted access to views 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import *
