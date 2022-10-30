@@ -17,16 +17,16 @@ Please see the video and photos below.
 ## Photos
 
 ### Home Page
-![1](https://user-images.githubusercontent.com/81361291/197796999-b4d2b928-2776-4958-920d-76e5d3b62e88.PNG)
+![homepage](https://user-images.githubusercontent.com/81361291/198885041-b7f26185-bf10-4f50-a718-a42af035353f.PNG)
 
 ### To Do Lists
-![1](https://user-images.githubusercontent.com/81361291/197798089-e95c448a-2063-478a-ae49-6ca9367b954e.PNG)
+![todolists](https://user-images.githubusercontent.com/81361291/198885050-8b74675b-12b0-49a0-bbd2-1c315508c31d.PNG)
 
 ### A To Do List
-![1](https://user-images.githubusercontent.com/81361291/197798320-bb4c46e3-3d54-420f-a212-06fab6b89dd4.PNG)
+![atodolist](https://user-images.githubusercontent.com/81361291/198885098-f4ce7cf3-6504-4998-853b-7c2006044e39.PNG)
 
 ### Calendar
-![1](https://user-images.githubusercontent.com/81361291/197798988-69faab47-63a1-4b82-bdde-675d4f1324b5.PNG)
+![calendar](https://user-images.githubusercontent.com/81361291/198885059-1fdd620c-c08b-44a1-accd-02548b71411e.PNG)
 
 ### Gallery
-![1](https://user-images.githubusercontent.com/81361291/197799387-3a2fd6fe-e27d-497b-bde5-0cd219b47fed.PNG)
+![gallery](https://user-images.githubusercontent.com/81361291/198885065-a195d90f-c74e-43bf-8b68-17021333f82d.PNG)
