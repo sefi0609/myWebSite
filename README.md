@@ -12,7 +12,7 @@ Please see the photos below.
 
 
 ## Video
-[MyWebSite Video](https://drive.google.com/file/d/1WOYuEvQMOX8v5mu-5NBmz-jrggJ0vl2N/view?usp=sharing)
+[MyWebSite](https://drive.google.com/file/d/1WOYuEvQMOX8v5mu-5NBmz-jrggJ0vl2N/view?usp=sharing)
 
 ## Photos
 
