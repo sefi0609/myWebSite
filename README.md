@@ -29,4 +29,4 @@ Please see the video and photos below.
 ![calendar](https://user-images.githubusercontent.com/81361291/198885618-985c118f-8844-4ae2-b7be-e9e669419ffb.PNG)
 
 ### Gallery
-![gallery](https://user-images.githubusercontent.com/81361291/198885065-a195d90f-c74e-43bf-8b68-17021333f82d.PNG)
+![gallery](https://user-images.githubusercontent.com/81361291/198886069-c616836b-8d76-457f-bf2c-1fb9be66add1.PNG)
