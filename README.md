@@ -5,7 +5,7 @@ This is a full-stack development project.
 I built this site using django framework for learning purposes,  
 but this project can easily be implimented.  
 The first page is for general information and registeration or login.  
-After the registeration you have a todo-list, a calendar for your daily activities   
+After the registeration you have a to-do-list, a calendar for your daily activities   
 and a gallery with the option to upload photos.  
 For this project I have used mySQL for the site database.  
 Please see the video and photos below.  
