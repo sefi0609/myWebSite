@@ -3,7 +3,7 @@
 Hello and welcome to myWebSite.   
 This is a full-stack development project.  
 I built this site using Django framework for learning purposes,  
-but this project can easily be implimented.   
+but this project can easily be deployed.   
 Iv'e also used HTML and CSS for the appearance of the site.  
 The first page is for general information and registeration or login.  
 After the registeration you have a to-do-list, a calendar for your daily activities   
