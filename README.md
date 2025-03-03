@@ -2,8 +2,7 @@
 
 Hello and welcome to my website!  
 This is a full-stack development project.  
-I built this site using the **Django** framework for learning purposes,  
-but this project can easily be deployed.  
+I built this site using the **Django** framework for learning purposes, but this project can easily be deployed (on AWS for instance).  
 I've also used **HTML and CSS** for the site's appearance.  
 
 The first page provides general information and allows for **registration or login**.  
