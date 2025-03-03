@@ -1,4 +1,4 @@
-## Full Stack Application Project
+## Full Stack Application
 
 Hello and welcome to my website!  
 This is a full-stack development project.  
